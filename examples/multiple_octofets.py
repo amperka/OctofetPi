@@ -1,11 +1,11 @@
-""" The program turns on all the switches in course, then turns them off."""
+"""The program turns on all the channels one by one, then turns all off."""
 
 import time
 import octofet
 
 
 def main():
-    print("Please enter the number of devices used.")
+    print("Enter number of Octofets in chain (1 for single one):")
     # The number of Octofet boards used.
     device_count = int(input())
     # Chip Enable pin. Set it to 0 or 1, depending on the connections.
